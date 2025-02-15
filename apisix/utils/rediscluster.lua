@@ -25,6 +25,7 @@ local function new_redis_cluster(conf, dict_name)
         name = conf.redis_cluster_name,
         serv_list = {},
         read_timeout = conf.redis_timeout,
+        connect_timeout = conf.redis_timeout,
         auth = conf.redis_password,
         dict_name = dict_name,
         connect_opts = {
